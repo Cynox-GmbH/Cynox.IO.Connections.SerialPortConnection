@@ -97,7 +97,7 @@ namespace Cynox.IO.Connections
             }
             catch (Exception ex)
             {
-                throw new ConnectionException("Failed to open port.", ex);
+                throw new ConnectionException($"Failed to open port '{_Port?.PortName}'.", ex);
             }
         }
 
@@ -117,7 +117,7 @@ namespace Cynox.IO.Connections
             }
             catch (Exception ex)
             {
-                throw new ConnectionException("Failed to close port.", ex);
+                throw new ConnectionException($"Failed to open port '{_Port?.PortName}'.", ex);
             }
         }
 
